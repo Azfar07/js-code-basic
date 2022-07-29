@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+  <button type="button" name="button" onclick="openWindow()">Open Window</button>
+  <button type="button" name="button" onclick="closeWindow()">Close Window</button>
+  <button type="button" name="button" onclick="moveWindow()">Move Window</button>
+	<button type="button" name="button" onclick="resizeWindow()">Resize Window</button>
+	<script>
+    // function openWindow() {
+    //   window.open();
+    // }
+    var myWindow;
+
+    function openWindow() {
+      // window.open("https://www.yahoobaba.net","_blank");
+      // myWindow = window.open("https://www.yahoobaba.net","","width:300px, height:200px, top=300px");
+      myWindow = window.open("","","width:300px, height:200px, top=300px");
+      myWindow.document.write("This is my window")
+    }
+
+    function closeWindow(){
+      myWindow.close();
+    }
+
+		function resizeWindow(){
+		  myWindow.resize(400,400);
+		}
+
+// function moveWindow(){
+//   myWindow.moveTo(100,100);
+//   myWindow.focus();
+// }
+
+function moveWindow(){
+  myWindow.moveBy(200,200);
+  myWindow.focus();
+}
+	</script>
+</body>
+</html>

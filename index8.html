@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript</title>
+<script type="text/javascript">
+
+//OOP concept
+
+// class hello{
+//   message(){
+//     console.log("Hello World");
+//   }
+//   sorry(){
+//     console.log("I am sorry");
+//   }
+// }
+// let a = new hello();
+// a.message();
+// a.sorry();
+
+// class student{
+//   constructor(){
+//   let name;
+//   console.log("Consturtor Function");
+//   }
+//   hello(){
+//     console.log(`Hello ${this.name}`);
+//   }
+// }
+// let a = new student();
+// a.name = "azfar";
+// a.hello();
+//
+// class student{
+//   constructor(name){
+//   this.studentName=name;
+//   console.log("Consturtor Function");
+//   }
+//   hello(){
+//     console.log(`Hello ${this.studentName}`);
+//   }
+// }
+// let a = new student("azfar");
+// a.hello();
+
+// class student{
+//   constructor(name,age){
+//   this.studentName=name;
+//   this.studentAge=age;
+//   console.log("Consturtor Function");
+//   }
+//   hello(){
+//   //  console.log(`Hello ${this.studentName} and your age is ${this.studentAge}`);
+//     document.write(`Hello ${this.studentName} and your age is ${this.studentAge}`);
+//   }
+//   static staticMethod(){
+//     console.log("Static Method");
+//   }
+// }
+// let a = new student("azfar",22);
+// a.hello();
+// student.staticMethod();
+
+//OOP concept: Inheritence
+
+// class employee{
+//   constructor(name){
+// 		this.empname=name;
+//     console.log(`Constructor : Employee ${this.empname}`);
+//   }
+// 	info(){
+// 		console.log(`Employee name : ${this.empname}`);
+// 	}
+// }
+// class manager extends employee{
+// 	info(){
+// 	super.info();
+// 		console.log(`Manager name : ${this.empname}`);
+// 	}
+// }
+// let a = new manager("Azfar");
+// a.info();
+
+class employee{
+  constructor(name,age,salary){
+		this.empname=name;
+		this.empage=age;
+		this.empsalary=salary;
+    console.log(`Constructor : Employee ${this.empname}`);
+  }
+	info(){
+		document.write(`<h3>Employee Class</h3>
+			 name : ${this.empname} <br>
+			 age : ${this.empage} <br>
+			 salary : ${this.empsalary} <br>`);
+	}
+}
+class manager extends employee{
+	info(){
+		let travelAllowence = 3000;
+		let phoneAllowence = 2000;
+		let totalSalary = travelAllowence + phoneAllowence + this.empsalary ;
+		document.write(`<h3>Manager Class</h3>
+			 name : ${this.empname} <br>
+			 age : ${this.empage} <br>
+			 salary : ${totalSalary} <br>`);
+	}
+}
+class test extends manager{
+
+}
+//let a = new manager("Azfar",22,25000);
+//let b = new employee("Muaaz",23,15000);
+let c = new test("Muaaz",23,15000);
+c.info();
+//b.info();
+
+</script>
+</head>
+<body>
+</body>
+</html>

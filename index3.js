@@ -1,0 +1,34 @@
+// var a=document.getElementById('inner').parentElemet;
+// console.log(a);
+// var a=document.getElementById('outer').parentElemet;
+// console.log(a);
+// document.getElementById('child-c').parentElement.style.background='blue'
+// var a=document.getElementById('child-c').parentElemet;
+// console.log(a);
+// document.getElementById('child-c').parentNode.style.background='blue'
+// var a=document.getElementById('main').parentNode;
+// console.log(a);
+// var a=document.getElementById('outer').children;
+// console.log(a);
+// var b=document.getElementById('inner').children[1].style.background='blue';
+// console.log(b);
+// var b = document.getElementById('inner').childNodes[5].style.background="blue";
+// console.log(b);
+// var b = document.getElementById('inner').firstElementChild;
+// console.log(b);
+// var b = document.getElementById('inner').firstElementChild.innerHTML;
+// console.log(b);
+// var b = document.getElementById('inner').lastElementChild.style.background='blue';
+// console.log(b);
+// var b = document.getElementById('outer').lastElementChild.style.background='blue';
+// console.log(b);
+// var b = document.getElementById('child-c').firstChild;
+// console.log(b);
+// var b = document.getElementById('child-c').previousElementSibling.style.backgroundColor = 'yellow';
+// console.log(b);
+// var a = document.getElementById('child-c').nextElementSibling.style.backgroundColor = 'green';
+// // console.log(a);
+// var b = document.getElementById('child-c').previousSibling.style.backgroundColor = 'yellow';
+// console.log(b);
+// var a = document.getElementById('child-c').nextSibling.style.backgroundColor = 'green';
+// console.log(a);
